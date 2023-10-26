@@ -1,0 +1,8 @@
+windows
+
+./bin/windows/zookeeper-server-start.bat config/zookeeper.properties
+./bin/windows/kafka-server-start.bat config/server.properties
+
+./bin/windows/kafka-console-consumer.bat --topic SHOP_TOPIC --bootstrap-server localhost:9092 --from-beginning
+
+./bin/windows/kafka-console-consumer.bat --topic SHOP_TOPIC_EVENT --bootstrap-server localhost:9092 --from-beginning
